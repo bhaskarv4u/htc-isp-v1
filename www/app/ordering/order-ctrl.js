@@ -12,13 +12,20 @@
 
         vm.mainMenuItems = orderingApi.getMainMenus();
 
-        vm.showSubMenuItems = function (argument) {
         
-        	console.log(argument);
+
+        // function to be invoked when clicked by Main Menu button
+        vm.showSubMenuItems = function (mainMenuId) {
+        
+        	console.log(mainMenuId);
+            vm.subMenuItems  = orderingApi.getSubMenus(mainMenuId);
+
+            console.log("vm submenu items : ")
+            console.log(vm.subMenuItems)
         	// body...
         };
 
-        vm.subMenuItems = orderingApi.getSubMenus();
+        
 
     };
    
