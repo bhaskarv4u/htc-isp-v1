@@ -1,0 +1,32 @@
+<ion-view ng-controller="OrderCtrl as vm">
+  <ion-content class="has-header">
+  <!-- <div class="row" id="FirstLevelSubMenu">
+  <div class="col"><button class="col col-50 button button-positive">Place Order</button></div>
+  <div class="col"><button class="col button button-positive">Order Detail</button></div>
+  <div class="col"><button class="col button button-positive">Order Support Functions</button></div>  
+  </div> -->
+
+hiiiii 
+hiiii
+{{test}}
+ {{vm.test}}  
+
+<div class="row" id="FirstLevelSubMenu">
+  <div ng-repeat="mainMenu in vm.mainMenuItems">
+        <button class="col button button-positive" ng-click="vm.showSubMenuItems(mainMenu.name)">
+                {{mainMenu.name}}            
+        </button>
+   </div>
+   </div>
+  <!-- <div class="row" id="SecondLevelSubMenu" ng-show="true">
+  <div class="col"><button class="col col-50 button button-positive">Place Order</button></div>
+  <div class="col"><button class="col button button-positive">Order Detail</button></div>
+  <div class="col"><button class="col button button-positive">Order Support Functions</button></div>  
+  </div> -->
+
+ 
+  
+  
+
+  </ion-content>
+</ion-view>

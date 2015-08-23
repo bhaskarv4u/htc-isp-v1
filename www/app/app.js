@@ -75,11 +75,11 @@ angular.module("eliteApp", ["ionic"])
       }
     })
 
-    .state('app.standings', {
-      url: "/standings",
+    .state('app.ordering', {
+      url: "/ordering/:id",
       views: {
         'mainContent': {
-          templateUrl: "app/standings/standings.html"
+          templateUrl: "app/ordering/ordering.html"
         }
       }
     })
