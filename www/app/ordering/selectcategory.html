@@ -3,5 +3,61 @@
   <h1>{{vm.header}}</h1>
 
   
+  <div class="card">
+  <div class="row item-divider">
+    <div class="col"></div>
+  <div class="col">Categories</div>
+  <div class="col">Available</div>
+  <div class="col">Remaining</div>
+  <div class="col">Pending Transmission</div>
+  <div class="col">Received</div>   
+  </div>
+
+ <!--  <div class="row item button button-small" ng-repeat="subgroup in vm.orderGroups">
+        <div class="col col-50">{{subgroup.name}}</div>
+        <div class="col">{{subgroup.available}}</div>
+        <div class="col">{{subgroup.remaining}}</div>
+        <div class="col">{{subgroup.pendingTransmission}}</div>
+        <div class="col">{{subgroup.received}}</div>   
+  </div> -->
+
+ <!--  <ul class="list">
+    <li class="col item item-checkbox" ng-repeat="subcategory in vm.orderCategories">
+       <label class="checkbox">
+         <input type="checkbox">
+       </label>
+      {{subcategory.name}}
+    </li>
+</ul> -->
+
+<!-- <div class="list">
+  <a class="row item item-text-wrap" ng-repeat="subcategory in vm.orderCategories">       
+        <div class="col">{{subcategory.name}}</div>
+        <div class="col">{{subcategory.available}}</div>
+        <div class="col">{{subcategory.remaining}}</div>
+        <div class="col">{{subcategory.pendingTransmission}}</div>
+        <div class="col">{{subcategory.received}}</div>
+        <i class="icon ion-chevron-right"></i>
+  </a>
+</div> -->
+
+<ul class="list">
+  <li class="row item item-checkbox item item-text-wrap" ng-repeat="subcategory in vm.orderCategories">    
+         
+       <div class="col"> <label class="checkbox">
+         <input type="checkbox">
+       </label></div>
+
+        <div class="col">{{subcategory.name}}</div>
+        <div class="col">{{subcategory.available}}</div>
+        <div class="col">{{subcategory.remaining}}</div>
+        <div class="col">{{subcategory.pendingTransmission}}</div>
+        <div class="col">{{subcategory.received}}</div>
+  </li>
+</ul>
+
+ 
+</div>
+
   </ion-content>
 </ion-view>

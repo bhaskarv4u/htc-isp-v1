@@ -7,6 +7,7 @@
         var vm = this;
         vm.header = "Select Order Category";       
 
+         vm.orderCategories = orderingApi.getCategories();
         // vm.orderGroups = orderingApi.getOrderGroups();
         console.log("In SelectCategoryCtrl");
     };
