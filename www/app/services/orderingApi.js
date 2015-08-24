@@ -46,14 +46,24 @@
         	return orderSubMenuItems;
         };
 
+        function getOrderGroups () {
+        	// body...
+        	var orderGroups = JSON.parse('[{"id":5000, "name":"Bakery", "available":12, "remaining":10, "pendingTransmission":3, "received":2, "carryType":"C"},{"id":5001, "name":"Cigarettes", "available":50, "remaining":40, "pendingTransmission":10, "received":5,"carryType":"C"},{"id":5002, "name":"Health & BeautyCare", "available":173, "remaining":10, "pendingTransmission":3, "received":4, "carryType":"N"},{"id":5003, "name":"Supplier-Bags/Uniforms/Others", "available":12, "remaining":10, "pendingTransmission":3,"received":2, "carryType":"C"}]');
+       								   
+        	return orderGroups;
+        };
 
+        function getCategories (subgroupid) {
+        	
+        };
 
 		// Revealing module pattern
         return {
             getLeagues: getLeagues,
             getLeagueData: getLeagueData,
             getMainMenus: getMainMenus,
-            getSubMenus: getSubMenus
+            getSubMenus: getSubMenus,
+            getOrderGroups: getOrderGroups
         };
     };
 })();

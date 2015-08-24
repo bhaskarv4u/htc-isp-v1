@@ -5,23 +5,39 @@
   <div class="col"><button class="col button button-positive">Order Detail</button></div>
   <div class="col"><button class="col button button-positive">Order Support Functions</button></div>  
   </div> -->
-
-<div class="row" id="FirstLevelSubMenu">
-  <div ng-repeat="mainMenu in vm.mainMenuItems">
-        <button class="col button button-positive" ng-click="vm.showSubMenuItems(mainMenu.id)">
-                {{mainMenu.name}}            
-        </button>
-   </div>
-</div>
-  
-  <div class="row" id="SecondLevelSubMenu" ng-show="true">
-    <div ng-repeat="subMenu in vm.subMenuItems">
-     <button class="col button button-positive">
-                {{subMenu.name}}            
-      </button>
-    </div>
+<div class="card">
+<div class="item item-divider">
+  <div class="row" id="FirstLevelSubMenu">
+    <div ng-repeat="mainMenu in vm.mainMenuItems">
+          <button class="col icon" ng-click="vm.showSubMenuItems(mainMenu.id)">
+                  {{mainMenu.name}}            
+          </button>
+     </div>
   </div>
+    
+    <div class="row" id="SecondLevelSubMenu" ng-show="true">
+      <div ng-repeat="subMenu in vm.subMenuItems">
+       <a class="col button button-clear button-positive" ui-sref="app.selectordergroup">
+                  {{subMenu.name}}            
+        </a>
+      </div>
+    </div>
+ </div>
 
+   <div class="col">
+      <div class="card">
+        <div class="item-divider">
+          Order Status 
+         <i class="icon item-icon-left ion-record balanced"></i>
+      </div>      
+      
+       <div class="card">
+        <div >
+          Order Dashboard content     
+      </div>
+
+      </div>  
+    </div>
   
 
   </ion-content>

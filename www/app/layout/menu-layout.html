@@ -1,13 +1,24 @@
 <ion-side-menus>
 
   <ion-pane ion-side-menu-content>
-    <ion-nav-bar class="bar-balanced">
+   <!--  <ion-nav-bar>
+
+      <div class="seiispimage">
+        <img  src="\img\sevenElevenBanner.png"></img>
+      </div>   
+      
+     
+      <ion-nav-back-button class="button-clear icon ion-ios7-arrow-back"></ion-nav-back-button>
+     
+    </ion-nav-bar> -->
+ <ion-nav-bar class="bar-balanced">
      <div class="col text-right">
        <h2>John Doe</h2>   
       </div>
       <ion-nav-back-button class="button-clear icon ion-ios7-arrow-back"></ion-nav-back-button>
       <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     </ion-nav-bar>
+    <!-- main view name -->
     <ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
 
@@ -15,6 +26,7 @@
     <header class="bar bar-header bar-balanced">
       <h1 class="title">SEI</h1>
     </header>
+     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
     <ion-content class="has-header">
       <ion-list>
       
