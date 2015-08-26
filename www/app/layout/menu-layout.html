@@ -1,55 +1,50 @@
+<ion-view>
+
 <ion-side-menus>
-
-  <ion-pane ion-side-menu-content>
-   <!--  <ion-nav-bar>
-
-      <div class="seiispimage">
-        <img  src="\img\sevenElevenBanner.png"></img>
-      </div>   
-      
-     
-      <ion-nav-back-button class="button-clear icon ion-ios7-arrow-back"></ion-nav-back-button>
-     
-    </ion-nav-bar> -->
- <ion-nav-bar class="bar-balanced">
-     <div class="col text-right">
-       <h2>John Doe</h2>   
-      </div>
-      <ion-nav-back-button class="button-clear icon ion-ios7-arrow-back"></ion-nav-back-button>
+		<ion-header-bar class="bar-light">
+	<img style="width:5%;" src="img/latest.png"></img>
+	<img style="width:94%;" src="img/sevenelevenbanner.png"></img>
+	<img style="width:7%;" src="img/user.png"></img>
+	
+	 <div class="buttons">
+       <ion-nav-back-button class="button-clear icon ion-ios7-arrow-back"></ion-nav-back-button>
       <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-    </ion-nav-bar>
+     
+      </div>
+	</ion-header-bar>	
+	<ion-side-menu-content>
+
+	
     <!-- main view name -->
     <ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
-  </ion-pane>
 
-  <ion-side-menu side="left">
-    <header class="bar bar-header bar-balanced">
-      <h1 class="title">SEI</h1>
-    </header>
-     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-    <ion-content class="has-header">
-      <ion-list>
-      
-      <ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.dashboard" >
-      <i class="icon ion-home"></i>Dashboard</ion-item>
 
-      <ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.ordering">
-      <i class="icon ion-clipboard"></i>Ordering</ion-item>
 
-      <ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.locations">
-      <i class="icon ion-bag"></i>Product Assortment</ion-item>
-      
-      <ion-item nav-clear menu-close class="item-icon-left" ui-sref="app.rules"><i class="icon ion-social-usd"></i>Cash Management</ion-item>
-       
-      <ion-item class="item-icon-left" href="#"><i class="icon ion-beer"></i>Gasoline Management
+
+	</ion-side-menu-content>
+	
+	<ion-side-menu expose-aside-when="(min-width:100px) and (max-width:1200px)" >
+
+	 <ion-content>
+
+		<ion-list>
+			
+			<ion-item style="background-color:#41ad57;" >
+			<img src="img/home.png" ui-sref="app.dashboard" ></img>
+			<br /><span style="color:white; text-align:justify; ">Dashboard</span></ion-item>
+			<ion-item style="background-color:#41ad57;">
+			<img src="img/ordering.png" style="" ui-sref="app.ordering" ></img><br /><span style="color:white; text-align:justify; ">Ordering</span></ion-item>
+			<ion-item style="background-color:#41ad57;" >
+			<img src="img/productassortment.png" style="" ui-sref="app.locations" ></img><br /><span style="color:white; text-align:justify; ">Product Assortment</span></ion-item>
+			<ion-item style="background-color:#41ad57;" ><img src="img/cash.png" style="" ui-sref="app.rules" ></img><br /><span style="color:white; text-align:justify; ">Cash Management</span></ion-item>
+			<ion-item style="background-color:#41ad57;" ><img src="img/gas.png" style="" href="#"></img><br /><span style="color:white; text-align:justify; ">Gasoline Management</span>
+			</ion-item>
+     <ion-item style="background-color:#41ad57;"><img src="img/inventory.png" style="" href="#"></img><br /><span style="color:white; text-align:justify; ">Inventory Management</span>
         </ion-item>
-      </ion-list>
-
-      
-
-       <ion-item class="item-icon-left" href="#"><i class="icon ion-social-buffer-outline"></i>Inventory Management
-        </ion-item>
-      </ion-list>
-  </ion-side-menu>
-
+		</ion-list>
+		</ion-content>
+	</ion-side-menu>
+	  
 </ion-side-menus>
+
+</ion-view>
