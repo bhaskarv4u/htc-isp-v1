@@ -59,6 +59,13 @@
         	return orderCategories;
         };
 
+
+        function getItemsToOrder (argument) {
+        	// argument should be a json object 
+
+        	
+        }
+
 		// Revealing module pattern
         return {
             getLeagues: getLeagues,

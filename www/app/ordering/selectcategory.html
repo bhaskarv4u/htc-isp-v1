@@ -1,16 +1,19 @@
 <ion-view ng-controller="SelectCategoryCtrl as vm">
   <ion-content class="has-header">
-  <h1>{{vm.header}}</h1>
+  <h4>{{vm.header}}</h4>
 
   
   <div class="card">
+     <div class="row">
+            <button class="button button-small" ui-sref="app.orderitems">Next</button>
+    </div>
   <div class="row item-divider">
-    <div class="col"></div>
-  <div class="col">Categories</div>
-  <div class="col">Available</div>
-  <div class="col">Remaining</div>
-  <div class="col">Pending Transmission</div>
-  <div class="col">Received</div>   
+    <div class="col col-10"></div>
+    <div class="col">Categories</div>
+    <div class="col">Available</div>
+    <div class="col">Remaining</div>
+    <div class="col">Pending Transmission</div>
+    <div class="col">Received</div>   
   </div>
 
  <!--  <div class="row item button button-small" ng-repeat="subgroup in vm.orderGroups">
@@ -44,7 +47,7 @@
 <ul class="list">
   <li class="row item item-checkbox item item-text-wrap" ng-repeat="subcategory in vm.orderCategories">    
          
-       <div class="col"> <label class="checkbox">
+       <div class="col col-10"> <label class="checkbox">
          <input type="checkbox">
        </label></div>
 

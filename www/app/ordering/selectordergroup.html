@@ -1,17 +1,23 @@
 <ion-view ng-controller="SelectOrderGroupCtrl as vm">
   <ion-content class="has-header">
-  <h1>{{vm.header}}</h1>
+  <h4>{{vm.header}}</h4>
 
-  <div class="card">
+<div class="card">
 
-  <div class="row item-divider">
-  <div class="col">Groups</div>
-  <div class="col">Available</div>
-  <div class="col">Remaining</div>
-  <div class="col">Pending Transmission</div>
-  <div class="col">Received</div> 
-  <i class="icon ion-chevron-right"></i>
+ <div class="item"> 
+        Navigation Menu     
   </div>
+
+  
+  
+    <div class="row item-divider">
+        <div class="col">Groups</div>
+        <div class="col">Available</div>
+        <div class="col">Remaining</div>
+        <div class="col">Pending Transmission</div>
+        <div class="col">Received</div> 
+        <i class="icon ion-chevron-right"></i>
+    </div>
 
  <!--  <div class="row item button button-small" ng-repeat="subgroup in vm.orderGroups">
         <div class="col col-50">{{subgroup.name}}</div>

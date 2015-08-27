@@ -66,7 +66,15 @@ angular.module("eliteApp", ["ionic"])
       }
     })
 
+    .state('app.orderitems', {
+      url: "/orderitems",
+      views: {
+        'mainContent': {
+          templateUrl: "app/ordering/orderitems.html"
+        }
+      }
+    })
+
     // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dashboard');
 });
-
